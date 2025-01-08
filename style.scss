@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+body {
+  background-color: v.$body-bg-color;
+}
+
+.header-title {
+  color: v.$sda-color;
+}
+
+.sda-navbar {
+  position: absolute;
+  width: 100%;
+  background-color: v.$navbar-bg-color;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      float: left;
+
+      a {
+        &:link,
+        &:visited {
+          display: block;
+          width: 150px;
+          padding: 8px;
+          color: v.$navbar-color;
+          background-color: v.$navbar-bg-color;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        &:hover,
+        &:active {
+          background-color: v.$sda-color;
+        }
+      }
+    }
+  }
+}
