@@ -1,45 +1,20 @@
-@use "variables" as v;
+@use "mixins" as m;
 
-body {
-  background-color: v.$body-bg-color;
-}
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
 
-.header-title {
-  color: v.$sda-color;
-}
+  &.centered-horizontally {
+    @include m.center("horizontal");
+  }
 
-.sda-navbar {
-  position: absolute;
-  width: 100%;
-  background-color: v.$navbar-bg-color;
+  &.centered-vertically {
+    @include m.center("vertical");
+  }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-
-    li {
-      float: left;
-
-      a {
-        &:link,
-        &:visited {
-          display: block;
-          width: 150px;
-          padding: 8px;
-          color: v.$navbar-color;
-          background-color: v.$navbar-bg-color;
-          text-align: center;
-          text-transform: uppercase;
-          text-decoration: none;
-          font-weight: bold;
-        }
-
-        &:hover,
-        &:active {
-          background-color: v.$sda-color;
-        }
-      }
-    }
+  &.centered-horizontally-and-vertically {
+    @include m.center("both");
   }
 }
