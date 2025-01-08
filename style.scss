@@ -18,3 +18,7 @@
     @include m.center("both");
   }
 }
+
+.rgb-gradient {
+  @include m.linear-gradient(to left, red, green, blue);
+}

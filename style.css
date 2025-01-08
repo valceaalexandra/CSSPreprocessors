@@ -30,4 +30,11 @@
   -moz-transform: translate(-50%, -50%);
 }
 
+.rgb-gradient {
+  background: linear-gradient(to left, red, green, blue);
+  background: -webkit-linear-gradient(to left, red, green, blue);
+  background: -moz-linear-gradient(to left, red, green, blue);
+  background: -ms-linear-gradient(to left, red, green, blue);
+}
+
 /*# sourceMappingURL=style.css.map */
