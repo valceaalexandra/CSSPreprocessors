@@ -19,6 +19,24 @@
   }
 }
 
+// Exercise 5
 .rgb-gradient {
   @include m.linear-gradient(to left, red, green, blue);
+}
+
+.element {
+  @include m.box(200px, 100px); // width: 200px; height: 100px;
+}
+
+.square {
+  @include m.box(150px); // width: 150px; height: 150px;
+}
+
+.popup {
+  @include m.absolute-position(200px, auto, 0px, auto);
+  // position: absolute;
+  // top: 200px;
+  // right: auto;
+  // bottom: 0px;
+  // left: auto;
 }

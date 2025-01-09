@@ -33,3 +33,29 @@
     background: -moz-linear-gradient($direction, $gradients);
     background: -ms-linear-gradient($direction, $gradients);
 }
+
+@mixin box($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin absolute-position($top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin font-size($size, $unit: px) {
+    @if $unit ==rem {
+        font-size: $size / 16 + rem;
+        line-height: $size * 1.5 + rem;
+    } @else {
+        font-size: $size + px;
+        line-height: $size * 1.5 + px;
+    }
+    
+    letter-spacing: normal;
+}
+

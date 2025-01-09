@@ -37,4 +37,22 @@
   background: -ms-linear-gradient(to left, red, green, blue);
 }
 
+.element {
+  width: 200px;
+  height: 100px;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+}
+
+.popup {
+  position: absolute;
+  top: 200px;
+  right: auto;
+  bottom: 0px;
+  left: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
