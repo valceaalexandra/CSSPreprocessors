@@ -1,0 +1,9 @@
+$icon-sizes: 8px, 16px, 24px, 32px, 48px, 64px;
+
+@each $icon-size in $icon-sizes {
+    .icon-#{$icon-size} {
+        font-size: $icon-size;
+        height: $icon-size;
+        width: $icon-size;
+    }
+}
